@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
 
-Color kPrimaryColor = Color.fromRGBO(3, 120, 221, 1);
-Color kPrimaryColorShadow = Color.fromRGBO(3, 120, 221, .2);
+const kFirstColor = Color(0xFF00aaff);
+const kSecondColor = Color(0xFF232441);
+const kThirdColor = Color(0xFF131429);
+const kAppBarBackgroundColor = Color(0xFF252638);

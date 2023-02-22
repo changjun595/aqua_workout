@@ -1,20 +1,25 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:get/get.dart';
 import '../core.dart';
 
 part 'app_routes.dart';
 
 class AppPages {
-  static const INITIAL = Routes.HOME;
+  static const INITIAL = Routes.WELCOME;
 
   static final routes = [
     GetPage(
-      name: Routes.HOME,
-      page: () => MainView(),
-      binding: MainBinding(),
+      name: Routes.WELCOME,
+      page: () => const WelcomeView(),
     ),
     GetPage(
-      name: Routes.UPCOMING,
-      page: () => ProVersionView(isBackAvailable: true),
+      name: Routes.ABOUT,
+      page: () => const AboutView(),
+    ),
+    GetPage(
+      name: Routes.LOGIN,
+      page: () => const LoginView(),
     ),
   ];
 }
